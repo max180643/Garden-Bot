@@ -22,30 +22,30 @@ MATCH_THRESHOLD = 0.85
 
 # NORMAL TILES with multiple templates per logical type
 NORMAL_TILES = {
-    "apple": ["apple.png", "apple_grass.png", "apple_purple.png", "apple_bag.png"],
-    "pear": ["pear.png", "pear_grass.png", "pear_purple.png", "pear_bag.png"],
-    "grape": ["grape.png", "grape_grass.png", "grape_purple.png", "grape_bag.png"],
-    "leaf": ["leaf.png", "leaf_grass.png", "leaf_purple.png", "leaf_bag.png"],
+    "apple": ["apple.png", "apple_grass.png", "apple_purple.png"],
+    "pear": ["pear.png", "pear_grass.png", "pear_purple.png"],
+    "grape": ["grape.png", "grape_grass.png", "grape_purple.png"],
+    "leaf": ["leaf.png", "leaf_grass.png", "leaf_purple.png"],
     "drop": ["drop.png", "drop_grass.png", "drop_purple.png"],
-    "flower": ["flower.png"]
+    "flower": ["flower.png", "flower_purple.png"]
 }
 
 # SPECIAL_TILES with multiple templates per logical type
 SPECIAL_TILES = {
-    "rocket": {"templates": ["rocket.png"], "priority": 1},
+    "rocket": {"templates": ["rocket.png", "rocket_grass.png", "rocket_purple.png"], "priority": 1},
     "bomb": {"templates": ["bomb.png", "bomb_grass.png", "bomb_purple.png"], "priority": 2},
     "dynamite": {"templates": ["dynamite.png", "dynamite_grass.png", "dynamite_purple.png"], "priority": 3},
-    "tnt": {"templates": ["tnt.png"], "priority": 4},
+    "tnt": {"templates": ["tnt.png", "tnt_grass.png", "tnt_purple.png"], "priority": 4},
 }
 
 # MAGIC_TILES
-MAGIC_TILES = ["magic_black.png", "magic_red.png", "magic_red_grass.png", "magic_red_purple.png"]
+MAGIC_TILES = ["magic_black.png", "magic_red.png", "magic_black_purple.png", "magic_red_purple.png", "magic_red_grass.png"]
 
 # GUI config
 play_templates = ["play.png"]
 complete_templates = ["complete.png"]
 already_complete_templates = ["profile.png"]
-stage_position = (861, 416)
+stage_position = (810, 365)
 booster_positions = [(333, 310), (451, 310), (570, 310)]  # x,y relative to window
 
 # -------------------
